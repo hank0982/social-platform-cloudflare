@@ -4,13 +4,14 @@ import MDEditor from '@uiw/react-md-editor';
 function Post(props) {
   return (
     <div className="card">
-      <h1>{props.data.title}</h1>
-      <h2>{props.data.username}</h2>
-      <MDEditor.Markdown>
-        {props.data.content}
-      </MDEditor.Markdown>
+      <div className="card-header">
+        <h3>{props.data.title}</h3>
+        <h4>{props.data.username}</h4>
+      </div>
+      <MDEditor.Markdown
+        className="content-preview" source={props.data.content}></MDEditor.Markdown>
     </div>
-  )
+  );
 }
 
 export default Post;
