@@ -1,0 +1,25 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+  width: calc(100% - 40px);
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  align-items: center;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(255, 255, 255, 1);
+  transform: translateY(-0.25em);
+}
+
+button:active {
+  transform: translateY(0);
+}
